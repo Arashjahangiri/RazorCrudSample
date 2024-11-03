@@ -1,0 +1,27 @@
+﻿@page
+@model RazorCrudSample.Pages.Product.CreateModel
+@{
+
+}
+
+<form method="post" asp-page="Create">
+    <div class="form-group">
+        <label asp-for="productCreationDto.Title"></label>
+        <input asp-for="productCreationDto.Title" type="text" class="form-control" placeholder="Enter Product Title">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="productCreationDto.Price"></label>
+        <input asp-for="productCreationDto.Price" type="text" class="form-control" placeholder="Enter Product Price">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="productCreationDto.Description"></label>
+        <input asp-for="productCreationDto.Description" type="text" class="form-control" placeholder="Enter Product Description">
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+

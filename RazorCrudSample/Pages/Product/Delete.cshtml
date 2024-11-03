@@ -1,0 +1,31 @@
+﻿@page
+@model RazorCrudSample.Pages.Product.DeleteModel
+@{
+}
+
+
+<form asp-page="/Product/Delete" method="post">
+    <div class="container">
+
+        <input type="hidden" asp-for="ProductDto.Id" />
+
+        <div class="form-group">
+            <label asp-for="ProductDto.Title"></label>
+            <label>:@Model.ProductDto.Title</label>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ProductDto.Price"></label>
+            <label>:@Model.ProductDto.Price</label>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ProductDto.Description"></label>
+            <label>:@Model.ProductDto.Description</label>
+        </div>
+
+        <div class="form-group" style="margin-top:20px;" >
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</form>

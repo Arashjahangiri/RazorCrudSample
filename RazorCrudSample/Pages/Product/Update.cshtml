@@ -1,0 +1,29 @@
+﻿@page
+@model RazorCrudSample.Pages.Product.UpdateModel
+@{
+}
+
+
+<form method="post" asp-page="Update">
+
+    <input type="hidden" asp-for="productDto.Id"/>
+
+    <div class="form-group">
+        <label asp-for="productDto.Title"></label>
+        <input asp-for="productDto.Title"  type="text" class="form-control" placeholder="Enter Product Title">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="productDto.Price"></label>
+        <input asp-for="productDto.Price" type="text" class="form-control" placeholder="Enter Product Price">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="productDto.Description"></label>
+        <input asp-for="productDto.Description"  type="text" class="form-control" placeholder="Enter Product Description">
+    </div>
+
+    <div class="form-group" style="margin-top:20px;" >
+        <button type="submit" class="btn btn-warning">Edit</button>
+    </div>
+</form>
